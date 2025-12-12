@@ -1,0 +1,7 @@
+{
+  "name": "Jugal AI",
+  "description": "A smart AI assistant capable of voice and text interaction in English and Nepali, conceptualized by Mr. Aayush Baral.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
