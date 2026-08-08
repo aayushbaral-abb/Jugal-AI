@@ -18,14 +18,14 @@
 
 ---
 
-## 🔑 How It Works (Bring Your Own API Key)
+## 🔑 How It Works (Client-Side API Key)
 
-This project operates **entirely in the browser** without a backend server. To keep your API usage secure and private:
+This project operates **100% on the client side** without any backend server infrastructure.
 
-1. Obtain a free API key from [Google AI Studio](https://aistudio.google.com/).
-2. Launch the app and enter your **Gemini API Key** in the setup modal/input field.
-3. The key is stored locally in your browser (`localStorage`) and is **never** sent to any third-party backend servers.
-4. Once saved, you can begin interacting with the AI instantly!
+Whether running the app locally or visiting the live site:
+1. Get a free API key from [Google AI Studio](https://aistudio.google.com/).
+2. Enter your **Gemini API Key** directly in the app interface.
+3. The key is stored locally in your browser (`localStorage`) and is **never** transmitted to any external backend server.
 
 ---
 
@@ -35,7 +35,7 @@ This project operates **entirely in the browser** without a backend server. To k
 * **Build Tool:** Vite
 * **AI Engine:** Google Gemini API (`@google/genai`)
 * **Storage:** Browser `localStorage` for client-side API key persistence
-* **Styling & UI Components:** Custom modular styling and reusable React components
+* **Styling & UI:** Custom React components and stylesheets
 
 ---
 
@@ -43,12 +43,12 @@ This project operates **entirely in the browser** without a backend server. To k
 
 ```text
 .
-├── components/      # React components (chat, API key modal, input, layout)
-├── services/        # Client-side Gemini API service wrapper
-├── App.tsx          # Main application component & state management
-├── constants.ts      # App configurations and system instructions
+├── components/      # UI components (chat interface, API key modal, input)
+├── services/        # Gemini API service wrapper
+├── App.tsx          # Main application setup and state management
+├── constants.ts      # Configurations and system prompts
 ├── index.html       # HTML entry point
-├── index.tsx        # React entry point
+├── index.tsx        # React root bootstrap
 ├── types.ts         # TypeScript interface definitions
-├── vite.config.ts   # Vite configuration settings
-└── package.json     # Project dependencies and script commands
+├── vite.config.ts   # Vite bundler configuration
+└── package.json     # Project dependencies and npm scripts
